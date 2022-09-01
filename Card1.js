@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     width: 343,
     margin: 10,
     height: 443,
-    marginTop: 120,
+    marginTop: 100,
     backgroundColor: '#4A73FC',
     borderRadius: 15,
     alignItems: 'center',
@@ -52,9 +52,5 @@ const styles = StyleSheet.create({
   baixo:{
     color: 'white',
   },
-  InfoCard:{
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-  }
+
 });
