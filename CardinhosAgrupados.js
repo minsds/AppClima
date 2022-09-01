@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { ScrollView } from 'react-native-web';
 import Cardinho from './Cardinho';
+import Cardinhobrancos from './cardinhobrancos';
 
 export default function CardinhosAgrupados(props) {
   return (
@@ -9,19 +10,19 @@ export default function CardinhosAgrupados(props) {
         <Cardinho hora='12:00' clima={'cloud'} textinho='Now' cor={'white'}></Cardinho>
         </View>
         <View>
-        <Cardinho hora='14:00' clima={'weather-rainy'} textinho='22°' colortext={'black'} cor={'white'}></Cardinho>
+        <Cardinhobrancos hora='14:00' clima={'weather-rainy'} textinho='22°' colortext={'black'} cor={'blue'}></Cardinhobrancos>
         </View>
         <View>
-        <Cardinho hora='16:00' clima={'weather-partly-cloudy'} textinho='26°' cor={'white'}></Cardinho>
+        <Cardinhobrancos hora='16:00' clima={'weather-partly-cloudy'} textinho='26°' cor={'blue'}></Cardinhobrancos>
         </View>
         <View>
-        <Cardinho hora='18:00' clima={'weather-partly-cloudy'} textinho='25°' cor={'white'}></Cardinho>
+        <Cardinhobrancos hora='18:00' clima={'weather-partly-cloudy'} textinho='25°' cor={'blue'}></Cardinhobrancos>
         </View>
         <View>
-        <Cardinho hora='20:00' clima={'checkbox-blank-circle'} textinho='31°' cor={'#FFD700'}></Cardinho>
+        <Cardinhobrancos hora='20:00' clima={'checkbox-blank-circle'} textinho='31°' cor={'#FFD700'}></Cardinhobrancos>
         </View>
         <View>
-        <Cardinho hora='22:00' clima={'weather-partly-cloudy'} textinho='29°' cor={'white'}></Cardinho>
+        <Cardinhobrancos hora='22:00' clima={'weather-partly-cloudy'} textinho='29°' cor={'blue'}></Cardinhobrancos>
         </View>
     </ScrollView>   
   );
