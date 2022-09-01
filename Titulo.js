@@ -3,11 +3,11 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Titulo() {
   return (
     <View style={styles.container}>
-      <View style={styles.bandung}>
-      <Text> <strong>Bandung, </strong></Text>
+      <View>
+      <Text style={{fontSize:23}}><strong>Bandung, </strong></Text>
       </View>
-      <View style={styles.indonesia}>
-      <Text>Indonésia</Text>
+      <View>
+      <Text style={{fontSize:21.1}}>Indonesia</Text>
       </View>
     </View>
   );
@@ -22,7 +22,4 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginBottom: -100,
   },
-  indonesia: {
-    fontSize: 30,
-  }
 });
