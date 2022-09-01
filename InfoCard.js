@@ -22,6 +22,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         margin:10,
         minWidth:150,
+        flexDirection: 'row',
+        flexWrap: 'wrap',
     },
     cima:{
         color: '#D3D3D3',
