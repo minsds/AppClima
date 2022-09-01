@@ -5,9 +5,9 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 export default function Cardinho(props) {
   return (
     <View style={styles.cardinho}>
-        <Text style={{color:'white'}}>{props.hora}</Text>
-        <MaterialCommunityIcons name={props.clima} size={24} color="white" />
-        <Text style={{color:'white'}}><strong>{props.textinho}</strong></Text>
+        <Text style={{color:'white'}}>{props.hora} </Text>
+        <MaterialCommunityIcons style={styles.icone} name={props.clima} color={props.cor} size={24}/>
+        <Text style={{color:'white'}}><strong>{props.textinho}</strong> </Text>
     </View>    
   );
 }
@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
     width: 56,
     height: 120,
     marginLeft: 10,
-    backgroundColor: '#4A73FC',
     borderRadius: 10,
     textAlign: 'center',
     alignItems: 'center',
@@ -27,4 +26,7 @@ const styles = StyleSheet.create({
     marginLeft: 20,
     marginTop: 20,
   },
+  icone:{
+    padding: 17,
+  }
 })
