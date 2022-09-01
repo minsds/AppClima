@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import AcimaClimas from './src/componentes/AcimaClima';
+import AcimaClimas from './src/componentes/AcimaClimas';
 import Cabeçalho from './src/componentes/Cabecalho';
 import Card1 from './src/componentes/Card1';
 import CardinhosAgrupados from './src/componentes/CardinhosAgrupados.js';
