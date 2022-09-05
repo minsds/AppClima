@@ -32,5 +32,6 @@ const styles = StyleSheet.create({
   cardinhosAgrupados:{
     flexDirection: 'row',
     marginRight: 20,
+    marginBottom: 20,
   },
 })
