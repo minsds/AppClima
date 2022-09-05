@@ -5,9 +5,10 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 export default function Linha2(props) {
   return (
     <View style={styles.cardinho}>
-        <MaterialCommunityIcons style={styles.icone} name={props.clima} color={props.cor} size={24}/>
-        <Text style={styles.ladinho}><strong>{props.textinho}</strong> {props.hora}</Text>
-        <Text style={{color:'white'}}>{props.textinho3} </Text>
+        
+        <Text><Text style={styles.ladinho}>  <MaterialCommunityIcons style={styles.icone} name={props.clima} color={props.cor} size={24}/> <strong>{props.textinho}</strong></Text><Text style={styles.hora}> {props.hora} </Text></Text>
+        <Text> <Text style={styles.text3}> {props.textinho3} </Text> <Text style={styles.text4}>{props.textinho4} </Text> </Text>
+
     </View>    
   );
 }
@@ -17,19 +18,27 @@ const styles = StyleSheet.create({
     fontFamily: 'Trebuchet MS',
     marginLeft: 10,
     borderRadius: 10,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginLeft: 20,
     marginTop: 20,
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 10,
 
   },
-  icone:{
-    padding: 25,
-  },
+
   ladinho: {
     color: 'white',
-    textAlign: 'left',
   },
+  text3: {
+    fontSize: 20,
+    color: 'white',
+
+  },
+  text4: {
+    color:'#D3D3D3',
+    textAlign: 'right',
+  },
+  hora: {
+    color: '#D3D3D3',
+  }
 })
