@@ -29,5 +29,7 @@ export default function Tela2() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor:'#4A73FC',
+    height: 882,
+    width: 400,
   },
 });
