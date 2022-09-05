@@ -1,12 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
 import InfoCard from './InfoCard';
+import oi from '../../assets/sun-cloud.png';
+
 
 export default function Card1() {
   return (
     <View style={styles.container}>
-        <MaterialCommunityIcons name="weather-pouring" style={{marginTop:5}} size={60} color="white" />
+        <img src={oi} style={styles.img}/>
       <Text style={styles.tempo}>Heavy Rain</Text>
       <Text style={styles.data}>Sunday, 02 Oct</Text>
       <Text style={styles.temp}> 24°</Text>
@@ -35,16 +36,21 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 25,
     fontFamily: 'Trebuchet MS',
+    marginBottom: 15,
+    marginTop: 10,
   },
   data: {
     color:'#D3D3D3',
     fontSize: 14,
     fontFamily: 'Trebuchet MS',
+    marginBottom: 20,
   },
   temp:{
     color: 'white',
     fontSize: 80,
     fontFamily: 'Trebuchet MS',
+    marginBottom: 20,
+    marginTop: -5,
   },
   cima:{
     color: '#D3D3D3',
@@ -52,5 +58,9 @@ const styles = StyleSheet.create({
   baixo:{
     color: 'white',
   },
+  img:{
+    marginTop: 10,
+    width: 55,
+  }
 
 });
