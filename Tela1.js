@@ -40,5 +40,9 @@ const styles = StyleSheet.create({
   viewtitulo:{
     alignItems: 'left',
     justifyContent: 'left',
+  },
+  container:{
+    height: 882,
+    width: 400,
   }
 });
